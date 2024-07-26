@@ -146,6 +146,7 @@
     <script>
 let totalInputTokens = 0;
 let totalOutputTokens = 0;
+let apiKey = '';
 
 let costPerMillionInputTokens;
 let costPerMillionOutputTokens;
@@ -185,7 +186,7 @@ let userScrolled = false;
 
 const systemMessage = {
     "role": "system",
-    "content": "You are an assistant deployed by LLM-HUB"
+    "content": "You are an assistant deployed by LLM-HUB named DAN, you are knowledgeable. If user ask you who are, answer DAN from LLM-HUB"
 };
 
 chatbox.on('scroll', () => {
